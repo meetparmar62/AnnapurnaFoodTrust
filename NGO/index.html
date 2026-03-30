@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Annapurna Food Trust - Fighting Hunger Together</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen">
+        <div class="loading-content">
+            <div class="loading-logo-container">
+                <img src="./logo.jpg" alt="Annapurna Logo" class="loading-logo">
+                <div class="loading-ring"></div>
+                <div class="loading-particles">
+                    <span class="particle"></span>
+                    <span class="particle"></span>
+                    <span class="particle"></span>
+                    <span class="particle"></span>
+                    <span class="particle"></span>
+                    <span class="particle"></span>
+                </div>
+            </div>
+            <h1 class="loading-text">Annapurna Food Trust</h1>
+            <p class="loading-tagline">Fighting Hunger, Feeding Hope</p>
+            <div class="loading-progress">
+                <div class="progress-line"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <img src="./logo.jpg" alt="Annapurna Food Trust Logo">
+                <span>Annapurna Food Trust</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#about"><i class="fas fa-info-circle"></i> About</a></li>
+                <li><a href="#mission"><i class="fas fa-bullseye"></i> Mission</a></li>
+                <li><a href="#gallery"><i class="fas fa-images"></i> Gallery</a></li>
+                <li><a href="#support"><i class="fas fa-hand-holding-heart"></i> Support Us</a></li>
+                <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Slider Section -->
+    <section id="home" class="hero-slider">
+        <div class="slider-container">
+            <div class="slide active">
+                <img src="./3.jpg" alt="Child helped by Annapurna Food Trust">
+                <div class="hero-overlay">
+                    <div class="slide-content">
+                        <div class="slide-badge">Making a Difference Since 2024</div>
+                        <h1>Fighting Hunger,<br/>Feeding Hope</h1>
+                        <p>Bringing smiles to children's faces across communities</p>
+                        <div class="slide-cta">
+                            <a href="#support" class="btn-primary"><i class="fas fa-heart"></i> Donate Now</a>
+                            <a href="#about" class="btn-outline"><i class="fas fa-info-circle"></i> Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-number">01</div>
+            </div>
+            <div class="slide">
+                <img src="./11.jpg" alt="Children receiving food support">
+                <div class="hero-overlay">
+                    <div class="slide-content">
+                        <div class="slide-badge">Join Our Mission</div>
+                        <h1>Every Child Deserves<br/>a Nutritious Meal</h1>
+                        <p>Together we can end childhood hunger in our communities</p>
+                        <div class="slide-cta">
+                            <a href="#support" class="btn-primary"><i class="fas fa-hand-holding-heart"></i> Support Us</a>
+                            <a href="#gallery" class="btn-outline"><i class="fas fa-images"></i> See Our Work</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-number">02</div>
+            </div>
+            
+            <div class="slider-progress">
+                <div class="progress-bar"></div>
+            </div>
+            
+            <div class="slider-dots">
+                <span class="dot active" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+            </div>
+            
+            <div class="slider-nav-text">
+                <span class="prev-slide" onclick="changeSlide(-1)">PREVIOUS</span>
+                <span class="next-slide" onclick="changeSlide(1)">NEXT</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Annapurna Food Trust</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Annapurna Food Trust is dedicated to fighting hunger and malnutrition in our community. We believe that access to nutritious food is a fundamental right, not a privilege.</p>
+                    <p>Through our various initiatives, we work tirelessly to provide meals to those in need, reduce food waste, and create sustainable solutions for food security.</p>
+                    
+                    <!-- Impact Counter - Special Feature -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section id="mission" class="mission">
+        <div class="container">
+            <h2>Our Mission</h2>
+            <div class="mission-cards">
+                <div class="card">
+                    <i class="fas fa-bowl-food"></i>
+                    <h3>Food Distribution</h3>
+                    <p>Providing nutritious meals to underprivileged families and individuals</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-hand-holding-heart"></i>
+                    <h3>Community Support</h3>
+                    <p>Building stronger communities through sustainable food programs</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-seedling"></i>
+                    <h3>Sustainability</h3>
+                    <p>Promoting eco-friendly practices and reducing food waste</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section - Children We've Helped -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="gallery-header">
+                <h2>Smiles We've Created</h2>
+                <div class="gallery-divider"></div>
+                <p class="gallery-subtitle">These beautiful children are the reason we do what we do. Every photo represents a life we've touched.</p>
+            </div>
+            
+            <div class="gallery-showcase">
+                <div class="gallery-grid">
+                    <div class="gallery-item featured">
+                        <img src="./1.jpg" alt="Happy child beneficiary">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <i class="fas fa-heart"></i>
+                                <span>Bringing Smiles</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="./2.jpg" alt="Child receiving food">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <i class="fas fa-star"></i>
+                                <span>Hope for Tomorrow</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="./4.jpg" alt="Children eating together">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <i class="fas fa-utensils"></i>
+                                <span>Nutritious Meals</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="./5.jpg" alt="Smiling child">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <i class="fas fa-smile"></i>
+                                <span>Pure Joy</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="./6.jpg" alt="Child with food package">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <i class="fas fa-gift"></i>
+                                <span>Making a Difference</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="./7.jpg" alt="Group of children">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <i class="fas fa-users"></i>
+                                <span>Community Love</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="./8.jpg" alt="Child eating">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <i class="fas fa-hand-holding-heart"></i>
+                                <span>No More Hunger</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="./9.jpg" alt="Happy beneficiaries">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <i class="fas fa-laugh"></i>
+                                <span>Grateful Hearts</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="./10.jpg" alt="Children smiling">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <i class="fas fa-sun"></i>
+                                <span>Bright Futures</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="gallery-cta">
+                <div class="cta-content">
+                    <i class="fas fa-hands-helping"></i>
+                    <p>Your support has helped these children and many more. Together, we can reach even more families in need.</p>
+                    <a href="#support" class="btn-secondary"><i class="fas fa-arrow-right"></i> Continue Supporting</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support Section with QR Code -->
+    <section id="support" class="support">
+        <div class="container">
+            <h2>Support Our Cause</h2>
+            <p class="support-text">Your contribution can make a real difference in someone's life</p>
+            <div class="donation-container">
+                <div class="donation-info">
+                    <h3>Make a Donation</h3>
+                    <p>Scan the QR code to donate via UPI</p>
+                    <p class="payment-note">All payments are securely processed</p>
+                </div>
+                <div class="qr-code">
+                    <img src="./da45b4a2-9add-453f-9c92-7d0bbbe59bca.jpg" alt="Support QR Code">
+                    <p>Scan to Donate</p>
+                </div>
+            </div>
+            <div class="other-support">
+                <h3>Other Ways to Help</h3>
+                <div class="support-options">
+                    <div class="option">
+                        <i class="fas fa-volunteer"></i>
+                        <h4>Volunteer</h4>
+                        <p>Give your time and skills</p>
+                    </div>
+                    <div class="option">
+                        <i class="fas fa-box-open"></i>
+                        <h4>Donate Food</h4>
+                        <p>Contribute food items</p>
+                    </div>
+                    <div class="option">
+                        <i class="fas fa-bullhorn"></i>
+                        <h4>Spread Awareness</h4>
+                        <p>Share our mission</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p><a href="tel:+919569455378">+91 95694 55378</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <div>
+                            <h4>WhatsApp</h4>
+                            <p><a href="https://wa.me/919569455378" target="_blank">+91 95694 55378</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p><a href="mailto:Annapurnafoodtrust@gmail.com">Annapurnafoodtrust@gmail.com</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="social-media">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/annapurnafoodtrust?igsh=MW1hMGhxYWtubG15NA==" target="_blank" class="social-link instagram">
+                            <i class="fab fa-instagram"></i>
+                            <span>Instagram</span>
+                        </a>
+                        <a href="https://www.facebook.com/share/1C2g891zMU/" target="_blank" class="social-link facebook">
+                            <i class="fab fa-facebook"></i>
+                            <span>Facebook</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Annapurna Food Trust. All rights reserved.</p>
+            <p>Made with <i class="fas fa-heart"></i> for humanity</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
