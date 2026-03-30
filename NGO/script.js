@@ -383,6 +383,23 @@ if (impactCounter) {
     counterObserver.observe(impactCounter);
 }
 
+// Timeline Animation - Scroll Trigger
+const timelineItems = document.querySelectorAll('.timeline-item');
+
+const timelineObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry, index) => {
+        if (entry.isIntersecting) {
+            setTimeout(() => {
+                entry.target.classList.add('visible');
+            }, index * 200); // Stagger effect
+        }
+    });
+}, { threshold: 0.3, rootMargin: '0px 0px -100px 0px' });
+
+timelineItems.forEach(item => {
+    timelineObserver.observe(item);
+});
+
 // Initialize slider when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
     initSlider();
